@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabets.c                               :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smkiva <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/18 11:40:24 by smkiva            #+#    #+#             */
-/*   Updated: 2020/06/19 12:39:05 by smkiva           ###   ########.fr       */
+/*   Created: 2020/06/18 13:56:00 by smkiva            #+#    #+#             */
+/*   Updated: 2020/06/19 13:28:17 by smkiva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include<unistd.h>
-
-int	ft_putchar(char c)
+int ft_print_numbers(void)
 {
-	write(1, &c , 1);
+	write(1,"0123456789", 10);
 }
-void	ft_print_alphabet(void)
+int main()
 {
-	char	letter;
-
-	letter = 'a';
-	while (letter <= 'z')
-	{
-		ft_putchar(letter);
-		letter++;
-	}
+	ft_print_numbers();
 }
 
